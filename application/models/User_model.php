@@ -7,5 +7,11 @@
    $apo = $query->result_array();
    return $query->result_array();
   }
+  function return_users2() {
+   $this->load->database();
+   $query2 = $this->db->query("SELECT * FROM user");
+   //$apo = $query2->result_array();
+   return $query2->result();
+  }
  }
 ?>

@@ -22,7 +22,9 @@ class User_details extends CI_Controller {
  {
   $this->load->model('user_model');
   $data["userArray"] = $this->user_model->return_users();
+  $data2["userArray2"] = $this->user_model->return_users2();
   $this->load->view('user_view', $data);
+  $this->load->view('user_view2', $data2);
 	}
 
 

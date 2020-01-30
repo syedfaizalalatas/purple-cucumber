@@ -26,7 +26,8 @@
    }
   ?>
  </table>
-</body>
+
+ </body>
 </html>
 
 <?php
