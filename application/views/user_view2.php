@@ -8,10 +8,10 @@
  <title>user details</title>
 </head>
 <body>
- <table border="2">
+ <table border="2" title="table 2">
   <tr>
    <th>User Id</th>
-   <th>User Name</th>
+   <th>User Name 2</th>
    <th>Company Name</th>
   </tr>
   <?php 
