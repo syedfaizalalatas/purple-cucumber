@@ -1,5 +1,5 @@
 <?php
- echo "i am a view for user details.";
+ //echo "i am a view for user details.";
 ?>
 
 <!DOCTYPE html>
@@ -10,21 +10,27 @@
 <body>
  <table border="1">
   <tr>
-   <th>No.</th>
-   <th>Username</th>
-   <th>Company</th>
+   <th>User Id</th>
+   <th>User Name</th>
+   <th>Company Name</th>
   </tr>
-  <tr>
-   <td>1</td>
-   <td><?= $userArray['username']; ?></td>
-   <td><?= $userArray['company']; ?></td>
-  </tr>
+  <?php 
+   foreach ($userArray as $key => $value) {
+    ?>
+    <tr>
+     <td>&nbsp;<?= $value['id']; ?></td>
+     <td>&nbsp;<?= $value['username']; ?></td>
+     <td>&nbsp;<?= $value['company']; ?></td>
+    </tr>
+    <?php
+   }
+  ?>
  </table>
 </body>
 </html>
 
 <?php
- echo "<pre>";
- print_r($userArray);
- echo "</pre>";
+ //echo "<pre>";
+ //print_r($userArray);
+ //echo "</pre>";
 ?>
